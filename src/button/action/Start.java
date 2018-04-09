@@ -56,7 +56,7 @@ public class Start extends Thread{
 			Z:
 			for(int i = 0 ; i<Makeurl.size() ; i++){if(!isRunning)break Z;
 //				if(i!= ran&& getRandom)continue;
-//				if(i!= 2)continue;// Test
+				if(i!= 2)continue;// Test
 				((JLabel)Comps.get("lblMake")).setText(Makename.get(i));
 				((JLabel)Comps.get("lblSys")).setText(Makename.get(i));
 				((JLabel)Comps.get("lblSys")).setForeground(Color.GREEN);
@@ -71,7 +71,7 @@ public class Start extends Thread{
 					if((Colurl.size()-1)!=0){
 						Z2:
 						for(int j = 0 ; j<Colurl.size() ; j++){if(!isRunning)break Z;
-//						if(j!= 15)continue Z2; // Test
+						if(j!= 15)continue Z2; // Test
 						//if(getRandom&&Math.random()>0.13)continue;
 							((JLabel)Comps.get("lblSys")).setForeground(Color.green);
 							((JLabel)Comps.get("lblCol")).setText(Colname.get(j).replace(year,"").replace(Makename.get(i),"").trim());
